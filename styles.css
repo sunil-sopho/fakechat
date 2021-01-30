@@ -10,10 +10,14 @@ body {
 }
 
 .navbar{
-    background-color: #283747;
+    background-color: #FFC2C7;
 }
 .form{
     width: 50%;
     margin: 0 auto;
+}
+
+.btn{
+    background-color: #ffdf2b !important    ; 
 }
 
