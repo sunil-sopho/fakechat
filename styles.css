@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #2e354f;
+}
+
+.container{
+    margin: 50px auto;
+}
+
+.navbar{
+    background-color: #283747;
+}
+.form{
+    width: 50%;
+    margin: 0 auto;
+}
+
