@@ -21,7 +21,7 @@ var http = require("http").createServer(app);
 var compression = require('compression');
 
 // var connection2 = require('./backend/Models/db_Model2.js')
-//var mainRoutes = require(__dirname+'/backend/routes/MainRoutes');
+var mainRoutes = require(__dirname+'/backend/routes/mainroutes');
 var _ = require("underscore");
 //var io = require("socket.io").listen(http);
 
@@ -44,10 +44,9 @@ app.use(cookieParser()); // read cookies (needed for auth)
 //app.use(bodyParser()); // get information from html forms
 
 app.use(compression());
-app.use(express.static(path.resolve(__dirname,'client/public')));
+app.use(express.static(path.resolve(__dirname,'client/')));
 
-
-
+app.use('/', mainRoutes);
 
 app.set('views',__dirname + '/client/views');
 app.engine('html',require('ejs').renderFile);
