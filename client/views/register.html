@@ -17,15 +17,23 @@
         <!-- Login Form -->
         <div class="container mx-auto">
             <form action="/register" method="POST" class="form">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn">Login</button>
+              div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" name="email" id="email" class="form-control shadow" required>
+              <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" name="password" class="form-control shadow" id="password" required>
+              <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="mb-3">
+              <label for="passwordCheck" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control shadow" id="passwordCheck" required>
+              <div class="invalid-feedback">Passwords don't match</div>
+              <div class="valid-feedback">Looks good!</div>
+          </div>
+          <button class="btn btn-dark my-1 ">Register</button>
               </form>
           </div>
 
