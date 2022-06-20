@@ -30,7 +30,7 @@
     "path": "^0.12.7",
     "q": "^1.5.0",
     "mysql2": "^1.5.1",
-    "sequelize": "^4.31.0",
+    "sequelize": "^6.19.1",
     "socket.io": "1.0.6",
     "underscore": "1.6.0"
   }
